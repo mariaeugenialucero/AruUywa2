@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context="com.example.aruuywa.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+         <Button
+            android:id="@+id/sonido"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/sonido"
+            android:scaleType="centerCrop"
+            android:onClick="animal" />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonido"
+            android:layout_toRightOf="@id/sonido"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#212121"/>
+
+        <Button
+            android:id="@+id/audio_image_view"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/audio"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/audio_text_view"
+            android:onClick="aymara"/>
+
+        <TextView
+            android:id="@+id/audio_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#212121" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8sp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iwija"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oveja"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_gravity="center_horizontal" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/oveja"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/siguiente"
+        android:onClick="siguiente"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anterior"
+        android:onClick="anterior"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+</LinearLayout>
+
